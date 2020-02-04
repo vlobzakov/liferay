@@ -58,7 +58,7 @@ actions:
     cmd [cp]: |-
       cd /opt
       wget https://sourceforge.net/projects/lportal/files/Liferay%20Portal/7.3.0%20GA1/liferay-ce-portal-tomcat-7.3.0-ga1-20200127150653953.tar.gz/download -O /opt/liferay.tgz
-      tgz -zxvf /opt/liferay.zip -C /opt
+      tar -zxvf /opt/liferay.zip -C /opt
       mv /opt/liferay-ce-portal-7.3.0-ga1 /opt/liferay
       cp -R /opt/liferay/data /opt
       cp -R /opt/liferay/license /opt
