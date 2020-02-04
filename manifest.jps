@@ -57,9 +57,9 @@ actions:
   deployArchive:
     cmd [cp]: |-
       cd /opt
-      wget https://sourceforge.net/projects/lportal/files/Liferay%20Portal/7.1.0%20GA1/liferay-ce-portal-tomcat-7.1.0-ga1-20180703012531655.zip/download -O /opt/liferay.zip
-      unzip /opt/liferay.zip -d /opt
-      mv /opt/liferay-ce-portal-7.1.0-ga1 /opt/liferay
+      wget https://sourceforge.net/projects/lportal/files/Liferay%20Portal/7.3.0%20GA1/liferay-ce-portal-tomcat-7.3.0-ga1-20200127150653953.tar.gz/download -O /opt/liferay.tgz
+      tgz -zxvf /opt/liferay.zip -C /opt
+      mv /opt/liferay-ce-portal-7.3.0-ga1 /opt/liferay
       cp -R /opt/liferay/data /opt
       cp -R /opt/liferay/license /opt
       cp -R /opt/liferay/osgi /opt
